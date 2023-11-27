@@ -24,12 +24,12 @@ public class PersonController {
     }
 
     @PostMapping
-    public Person savePerson(@RequestBody Person person){
+    public Person savePerson(@RequestBody NewPerson person){
         return service.savePerson(person);
     }
 
-    @GetMapping("/find/{name}")
-    public Person findByName(@PathVariable String name){
-        return service.findByName(name);
-    }
+//    @GetMapping("/find/{name}")
+//    public Person findByName(@PathVariable String name){
+//        return service.findByName(name);
+//    }
 }
